@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	var max int
 	var primes []int
 	Individable := func(divident int, divisors []int) bool {
 		for i := 0; i < len(primes) && primes[i] <= divident/2; i++ {
@@ -25,6 +24,7 @@ func main() {
 		return stringSlice
 	}
 
+	var max int
 	fmt.Scan(&max)
 	for i := 2; i <= max; i++ {
 		if Individable(i, primes) {
